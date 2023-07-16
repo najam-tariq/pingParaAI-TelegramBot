@@ -16,12 +16,12 @@ async def ping_website():
         try:
             response = requests.get(URL)
             if response.status_code == 200:
-                await bot.send_message(chat_id=CHAT_ID, text=f"Website {URL} is up.")
+                await bot.send_message(chat_id=CHAT_ID, text=f"Website \u2705 {URL} is up.")
             else:
-                await bot.send_message(chat_id=CHAT_ID, text=f"Website {URL} is down. Status code: {response.status_code}")
+                await bot.send_message(chat_id=CHAT_ID, text=f"Website \u274C {URL} is down. Status code: {response.status_code}")
         except requests.RequestException as e:
             await bot.send_message(chat_id=CHAT_ID, text=f"An error occurred while trying to ping {URL}: {str(e)}")
-        await asyncio.sleep(30)
+        await asyncio.sleep(300)
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
