@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher
 
 TOKEN = "6313877286:AAHrl52fjthsyREAGh1etzvUFCnAK6fYL6Y"
 CHAT_ID = "800695035"
-URL = "https://beta.paraai.pro"
+URL = "https://paraai.pro"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
