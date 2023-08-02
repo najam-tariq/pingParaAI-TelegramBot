@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, exceptions
 
 TOKEN = "6313877286:AAHrl52fjthsyREAGh1etzvUFCnAK6fYL6Y"
 CHAT_ID = "800695035"
-URL = "https://paraai.pro"
+URL = "https://beta.paraai.pro"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
